@@ -2,7 +2,7 @@
 {% block content %}
 <header class="header">
   <div>
-    <h1>M7 Hero Tier List</h1>
+    <h1>M7 Hero Tier List + Draft Master</h1>
     <p>SSR UI from scraper endpoint: <code>{{ scraper_base_url }}/api/tier-list/m7</code></p>
   </div>
   <div class="meta">
@@ -14,55 +14,138 @@
 {% if error %}
 <section class="error">Failed loading data: {{ error }}</section>
 {% else %}
-<nav class="roles">
-  {% for role in role_order %}
-  <a href="/?role={{ role }}" class="role-tab {% if role == selected_role %}active{% endif %}">
-    {{ role_labels.get(role, role) }}
-  </a>
-  {% endfor %}
-</nav>
+<section class="draft-master" id="draft-master">
+  <div class="draft-head">
+    <div class="draft-head-row">
+      <h2>DRAFT MASTER</h2>
+      <button id="contrast-toggle-btn" class="btn-muted contrast-btn" type="button" aria-pressed="false">
+        High Contrast: Off
+      </button>
+    </div>
+    <p>Advanced tactical analysis for ban/pick strategy with role-safe composition.</p>
+  </div>
 
-<section class="legend">
-  {% for tier, rule in tier_rules.items() %}
-  <div><strong>{{ tier }}</strong>: {{ rule }}</div>
-  {% endfor %}
+  <div class="draft-grid">
+    <aside class="team-panel ally-side">
+      <div class="panel-title">
+        <h3>Ally Team</h3>
+        <span id="ally-count">0/5</span>
+      </div>
+      <div id="ally-role-indicators" class="role-indicators"></div>
+      <div id="ally-slots" class="slot-list"></div>
+      <div class="sub-title">Bans</div>
+      <div id="ally-bans" class="ban-list"></div>
+    </aside>
+
+    <section class="draft-center">
+      <div class="turn-card">
+        <p class="turn-label" id="turn-label">Waiting draft data...</p>
+        <p class="turn-hint" id="turn-hint">-</p>
+        <p class="turn-progress" id="turn-progress"></p>
+      </div>
+
+      <div class="action-row">
+        <select id="manual-hero-select"></select>
+        <button id="manual-action-btn" class="btn-action">Apply</button>
+        <button id="skip-turn-btn" class="btn-muted">Skip</button>
+        <button id="clear-matchup-btn" class="btn-danger">Clear Matchup</button>
+      </div>
+
+      <button id="analyze-btn" class="analyze-btn" disabled>Analyze Matchup</button>
+
+      <section id="analysis-result" class="analysis-result hidden">
+        <div class="result-head" id="analysis-winner">Matchup Result</div>
+        <div class="result-grid">
+          <article class="score-card ally-side-soft">
+            <h4>Ally Team</h4>
+            <p id="ally-total" class="big-score">0.0</p>
+            <p id="ally-breakdown" class="small"></p>
+          </article>
+          <article class="score-card enemy-side-soft">
+            <h4>Enemy Team</h4>
+            <p id="enemy-total" class="big-score">0.0</p>
+            <p id="enemy-breakdown" class="small"></p>
+          </article>
+        </div>
+        <p id="analysis-prob" class="prob"></p>
+        <div class="analysis-actions">
+          <button id="clear-matchup-btn-bottom" class="btn-danger">Clear Matchup</button>
+        </div>
+      </section>
+
+      <div class="recommend-wrap">
+        <h3>Recommended for Current Turn</h3>
+        <div id="recommend-list" class="recommend-list"></div>
+      </div>
+    </section>
+
+    <aside class="team-panel enemy-side">
+      <div class="panel-title">
+        <h3>Enemy Team</h3>
+        <span id="enemy-count">0/5</span>
+      </div>
+      <div id="enemy-role-indicators" class="role-indicators"></div>
+      <div id="enemy-slots" class="slot-list"></div>
+      <div class="sub-title">Bans</div>
+      <div id="enemy-bans" class="ban-list"></div>
+    </aside>
+  </div>
 </section>
 
-{% set hero_details = role_data.get('heroDetails', []) %}
-{% if not hero_details %}
-<section class="error">No hero details available for this role.</section>
-{% else %}
-{% for tier in ['SS', 'S', 'A', 'B', 'C', 'D'] %}
-  {% set heroes = hero_details | selectattr('tier', 'equalto', tier) | list %}
-  <section class="tier-block">
-    <div class="tier-title tier-{{ tier|lower }}">{{ tier }}</div>
-    <div class="hero-grid">
-      {% for hero in heroes %}
-      <article class="hero-card">
-        <h3>{{ hero.hero }}</h3>
-        <p class="score">Score: {{ "%.3f"|format(hero.score) }}</p>
-        <p class="stats">
-          PickWin: {{ hero.stats.pickWinCount }} | Pick: {{ hero.stats.pickCount }} | Ban: {{ hero.stats.banCount }} | WR: {{ "%.1f"|format(hero.stats.winRate * 100) }}%
-        </p>
-        <p class="small"><strong>Countered By:</strong>
-          {% if hero.counters.counteredBy %}
-            {{ hero.counters.counteredBy | map(attribute='hero') | list | join(', ') }}
-          {% else %}
-            -
-          {% endif %}
-        </p>
-        <p class="small"><strong>Strong Against:</strong>
-          {% if hero.counters.strongAgainst %}
-            {{ hero.counters.strongAgainst | map(attribute='hero') | list | join(', ') }}
-          {% else %}
-            -
-          {% endif %}
-        </p>
-      </article>
-      {% endfor %}
-    </div>
-  </section>
-{% endfor %}
-{% endif %}
+<section class="tier-section">
+  <nav class="roles">
+    {% for role in role_order %}
+    <a href="/?role={{ role }}" class="role-tab {% if role == selected_role %}active{% endif %}">
+      {{ role_labels.get(role, role) }}
+    </a>
+    {% endfor %}
+  </nav>
+
+  <!-- <section class="legend">
+    {% for tier, rule in tier_rules.items() %}
+    <div><strong>{{ tier }}</strong>: {{ rule }}</div>
+    {% endfor %}
+  </section> -->
+
+  {% set hero_details = role_data.get('heroDetails', []) %}
+  {% if not hero_details %}
+  <section class="error">No hero details available for this role.</section>
+  {% else %}
+  {% for tier in ['SS', 'S', 'A', 'B', 'C', 'D'] %}
+    {% set heroes = hero_details | selectattr('tier', 'equalto', tier) | list %}
+    <section class="tier-block">
+      <div class="tier-title tier-{{ tier|lower }}">{{ tier }}</div>
+      <div class="hero-grid">
+        {% for hero in heroes %}
+        <article class="hero-card">
+          <h3>{{ hero.hero }}</h3>
+          <p class="score">Score: {{ "%.3f"|format(hero.score) }}</p>
+          <p class="stats">
+            PickWin: {{ hero.stats.pickWinCount }} | Pick: {{ hero.stats.pickCount }} | Ban: {{ hero.stats.banCount }} | WR: {{ "%.1f"|format(hero.stats.winRate * 100) }}%
+          </p>
+          <p class="small"><strong>Countered By:</strong>
+            {% if hero.counters.counteredBy %}
+              {{ hero.counters.counteredBy | map(attribute='hero') | list | join(', ') }}
+            {% else %}
+              -
+            {% endif %}
+          </p>
+          <p class="small"><strong>Strong Against:</strong>
+            {% if hero.counters.strongAgainst %}
+              {{ hero.counters.strongAgainst | map(attribute='hero') | list | join(', ') }}
+            {% else %}
+              -
+            {% endif %}
+          </p>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+  {% endif %}
+</section>
+
+<script id="draft-data" type="application/json">{{ draft_data_json | safe }}</script>
+<script src="/static/draft_master.js?v=20260220f"></script>
 {% endif %}
 {% endblock %}

@@ -1,6 +1,7 @@
 import os
 from typing import Any, Dict, Optional
 from pathlib import Path
+import json
 
 import httpx
 from fastapi import FastAPI, Query, Request
@@ -53,6 +54,13 @@ async def index(
     role_order = data.get("roleOrder", list(ROLE_LABELS.keys()))
     selected_role = role if role in role_order else (role_order[0] if role_order else "exp_lane")
     role_data = (data.get("roles") or {}).get(selected_role, {})
+    draft_payload = {
+        "roleOrder": role_order,
+        "roles": data.get("roles") or {},
+        "scoring": data.get("scoring") or {},
+        "generatedAt": data.get("generatedAt"),
+        "mapsAnalyzed": data.get("mapsAnalyzed"),
+    }
 
     return templates.TemplateResponse(
         "index.html",
@@ -67,5 +75,6 @@ async def index(
             "generated_at": data.get("generatedAt"),
             "maps_analyzed": data.get("mapsAnalyzed"),
             "tier_rules": (data.get("scoring") or {}).get("tierRules", {}),
+            "draft_data_json": json.dumps(draft_payload, ensure_ascii=False),
         },
     )
