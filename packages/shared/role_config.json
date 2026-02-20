@@ -1,0 +1,10 @@
+{
+  "roleOrder": ["exp_lane", "jungle", "mid_lane", "gold_lane", "roam"],
+  "roleLabels": {
+    "exp_lane": "Exp Lane",
+    "jungle": "Jungle",
+    "mid_lane": "Mid Lane",
+    "gold_lane": "Gold Lane",
+    "roam": "Roam"
+  }
+}

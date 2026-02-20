@@ -2,6 +2,8 @@ from fastapi import FastAPI, HTTPException
 from app.liquipedia_client import LiquipediaClient
 from app.s_tier import extract_latest_s_tier, liquipedia_page_slug_from_title
 from app.m7_parser import parse_matches
+from pathlib import Path
+import json
 
 app = FastAPI(title="Liquipedia Scraper Service", version="0.2.0")
 client = LiquipediaClient()
@@ -71,3 +73,36 @@ async def latest_s_tier_matches():
         "slugSource": "link" if latest_data.get("tournamentPage") else "title_to_underscore",
         **parse_matches(wikitext),
     }
+
+@app.get("/api/tier-list/m7")
+async def m7_tier_list(refresh: bool = False):
+    root = Path(__file__).resolve().parent.parent
+    out_path = root / "hero_tier_list.json"
+
+    if refresh or not out_path.exists():
+        source_files = [
+            root / "swiss_stage_matches.json",
+            root / "knockout_stage_matches.json",
+        ]
+        missing = [p.name for p in source_files if not p.exists()]
+        if missing:
+            raise HTTPException(
+                status_code=404,
+                detail={
+                    "message": "Source JSON not found. Generate/fetch Swiss and Knockout data first.",
+                    "missingFiles": missing,
+                },
+            )
+
+        try:
+            from build_hero_tier_list import build_tier_list
+
+            data = build_tier_list(source_files)
+            out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2))
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Failed rebuilding tier list: {str(e)}")
+
+    try:
+        return json.loads(out_path.read_text())
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed reading tier list file: {str(e)}")

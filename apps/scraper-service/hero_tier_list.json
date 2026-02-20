@@ -1,0 +1,3872 @@
+{
+  "generatedAt": "2026-02-20T15:01:19.335027+00:00",
+  "sources": [
+    "swiss_stage_matches.json",
+    "knockout_stage_matches.json"
+  ],
+  "mapsAnalyzed": 101,
+  "roleOrder": [
+    "exp_lane",
+    "jungle",
+    "mid_lane",
+    "gold_lane",
+    "roam"
+  ],
+  "scoring": {
+    "formula": "score = 0.50*norm(pick_and_win) + 0.40*norm(pick) + 0.10*norm(ban)",
+    "weights": {
+      "pick_and_win": 0.5,
+      "pick": 0.4,
+      "ban": 0.1
+    },
+    "tierRules": {
+      "SS": "Best heroes. Must ban or 1st pick",
+      "S": "Strong heroes. 1st pick or 2nd pick",
+      "A": "Good heroes. Safe picks, work well in teams",
+      "B": "Okay heroes. Useful if played well or for special plans",
+      "C": "Weaker heroes. Only good in very specific situations",
+      "D": "Weakest heroes. Better to pick others"
+    }
+  },
+  "roles": {
+    "exp_lane": {
+      "heroesCount": 17,
+      "tiers": {
+        "SS": [
+          "lapu-lapu"
+        ],
+        "S": [
+          "uranus",
+          "yu zhong",
+          "sora"
+        ],
+        "A": [
+          "esmeralda",
+          "arlott",
+          "phoveus",
+          "cici"
+        ],
+        "B": [
+          "alice",
+          "valentina",
+          "gloo",
+          "terizla"
+        ],
+        "C": [
+          "hilda",
+          "benedetta",
+          "ruby"
+        ],
+        "D": [
+          "khaleed",
+          "lukas"
+        ]
+      },
+      "heroDetails": [
+        {
+          "hero": "lapu-lapu",
+          "score": 0.925797,
+          "stats": {
+            "pickWinCount": 17,
+            "pickCount": 29,
+            "banCount": 18,
+            "winRate": 0.5862
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "arlott",
+                "encounters": 3,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "esmeralda",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "cici",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              },
+              {
+                "hero": "alice",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              },
+              {
+                "hero": "sora",
+                "encounters": 5,
+                "opponentWinRate": 0.4
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "uranus",
+                "encounters": 3,
+                "winRate": 1.0
+              },
+              {
+                "hero": "hilda",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "phoveus",
+                "encounters": 4,
+                "winRate": 0.75
+              },
+              {
+                "hero": "yu zhong",
+                "encounters": 7,
+                "winRate": 0.7143
+              },
+              {
+                "hero": "sora",
+                "encounters": 5,
+                "winRate": 0.6
+              }
+            ]
+          },
+          "tier": "SS",
+          "recommendation": "Best heroes. Must ban or 1st pick"
+        },
+        {
+          "hero": "uranus",
+          "score": 0.888423,
+          "stats": {
+            "pickWinCount": 15,
+            "pickCount": 28,
+            "banCount": 34,
+            "winRate": 0.5357
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "lapu-lapu",
+                "encounters": 3,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "cici",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "hilda",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "arlott",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "ruby",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "sora",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "phoveus",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "khaleed",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "esmeralda",
+                "encounters": 6,
+                "winRate": 0.8333
+              },
+              {
+                "hero": "alice",
+                "encounters": 3,
+                "winRate": 0.6667
+              }
+            ]
+          },
+          "tier": "S",
+          "recommendation": "Strong heroes. 1st pick or 2nd pick"
+        },
+        {
+          "hero": "yu zhong",
+          "score": 0.85844,
+          "stats": {
+            "pickWinCount": 13,
+            "pickCount": 30,
+            "banCount": 35,
+            "winRate": 0.4333
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "sora",
+                "encounters": 3,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "benedetta",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "terizla",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "cici",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "lapu-lapu",
+                "encounters": 7,
+                "opponentWinRate": 0.7143
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "esmeralda",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "arlott",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "gloo",
+                "encounters": 3,
+                "winRate": 0.6667
+              },
+              {
+                "hero": "phoveus",
+                "encounters": 3,
+                "winRate": 0.6667
+              },
+              {
+                "hero": "uranus",
+                "encounters": 6,
+                "winRate": 0.5
+              }
+            ]
+          },
+          "tier": "S",
+          "recommendation": "Strong heroes. 1st pick or 2nd pick"
+        },
+        {
+          "hero": "sora",
+          "score": 0.714118,
+          "stats": {
+            "pickWinCount": 10,
+            "pickCount": 24,
+            "banCount": 46,
+            "winRate": 0.4167
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "valentina",
+                "encounters": 3,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "uranus",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "phoveus",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "arlott",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "lapu-lapu",
+                "encounters": 5,
+                "opponentWinRate": 0.6
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "yu zhong",
+                "encounters": 3,
+                "winRate": 1.0
+              },
+              {
+                "hero": "benedetta",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "gloo",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "esmeralda",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "cici",
+                "encounters": 2,
+                "winRate": 0.5
+              }
+            ]
+          },
+          "tier": "S",
+          "recommendation": "Strong heroes. 1st pick or 2nd pick"
+        },
+        {
+          "hero": "esmeralda",
+          "score": 0.513274,
+          "stats": {
+            "pickWinCount": 7,
+            "pickCount": 18,
+            "banCount": 31,
+            "winRate": 0.3889
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "yu zhong",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "sora",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "phoveus",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "uranus",
+                "encounters": 6,
+                "opponentWinRate": 0.8333
+              },
+              {
+                "hero": "terizla",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "lapu-lapu",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "cici",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "gloo",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "alice",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "arlott",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "arlott",
+          "score": 0.481517,
+          "stats": {
+            "pickWinCount": 9,
+            "pickCount": 13,
+            "banCount": 20,
+            "winRate": 0.6923
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "gloo",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "yu zhong",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "esmeralda",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "lapu-lapu",
+                "encounters": 3,
+                "winRate": 1.0
+              },
+              {
+                "hero": "sora",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "alice",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "terizla",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "uranus",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "phoveus",
+          "score": 0.393862,
+          "stats": {
+            "pickWinCount": 6,
+            "pickCount": 15,
+            "banCount": 8,
+            "winRate": 0.4
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "uranus",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "valentina",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "arlott",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "lapu-lapu",
+                "encounters": 4,
+                "opponentWinRate": 0.75
+              },
+              {
+                "hero": "yu zhong",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "sora",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "esmeralda",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "alice",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "yu zhong",
+                "encounters": 3,
+                "winRate": 0.3333
+              },
+              {
+                "hero": "lapu-lapu",
+                "encounters": 4,
+                "winRate": 0.25
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "cici",
+          "score": 0.335601,
+          "stats": {
+            "pickWinCount": 6,
+            "pickCount": 9,
+            "banCount": 18,
+            "winRate": 0.6667
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "esmeralda",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "sora",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              },
+              {
+                "hero": "lapu-lapu",
+                "encounters": 3,
+                "opponentWinRate": 0.3333
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "uranus",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "yu zhong",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "lapu-lapu",
+                "encounters": 3,
+                "winRate": 0.6667
+              },
+              {
+                "hero": "sora",
+                "encounters": 2,
+                "winRate": 0.5
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "alice",
+          "score": 0.30156,
+          "stats": {
+            "pickWinCount": 4,
+            "pickCount": 12,
+            "banCount": 11,
+            "winRate": 0.3333
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "arlott",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "phoveus",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "esmeralda",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "uranus",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              },
+              {
+                "hero": "yu zhong",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "yu zhong",
+                "encounters": 2,
+                "winRate": 0.5
+              },
+              {
+                "hero": "lapu-lapu",
+                "encounters": 2,
+                "winRate": 0.5
+              },
+              {
+                "hero": "sora",
+                "encounters": 2,
+                "winRate": 0.5
+              },
+              {
+                "hero": "uranus",
+                "encounters": 3,
+                "winRate": 0.3333
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "valentina",
+          "score": 0.252856,
+          "stats": {
+            "pickWinCount": 5,
+            "pickCount": 5,
+            "banCount": 18,
+            "winRate": 1.0
+          },
+          "counters": {
+            "counteredBy": [],
+            "strongAgainst": [
+              {
+                "hero": "sora",
+                "encounters": 3,
+                "winRate": 1.0
+              },
+              {
+                "hero": "phoveus",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "lukas",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "gloo",
+          "score": 0.190264,
+          "stats": {
+            "pickWinCount": 3,
+            "pickCount": 7,
+            "banCount": 4,
+            "winRate": 0.4286
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "sora",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "esmeralda",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "yu zhong",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "arlott",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "yu zhong",
+                "encounters": 3,
+                "winRate": 0.3333
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "terizla",
+          "score": 0.154902,
+          "stats": {
+            "pickWinCount": 3,
+            "pickCount": 5,
+            "banCount": 0,
+            "winRate": 0.6
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "arlott",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "esmeralda",
+                "encounters": 3,
+                "opponentWinRate": 0.3333
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "yu zhong",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "esmeralda",
+                "encounters": 3,
+                "winRate": 0.6667
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "hilda",
+          "score": 0.127818,
+          "stats": {
+            "pickWinCount": 1,
+            "pickCount": 2,
+            "banCount": 33,
+            "winRate": 0.5
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "lapu-lapu",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "uranus",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "C",
+          "recommendation": "Weaker heroes. Only good in very specific situations"
+        },
+        {
+          "hero": "benedetta",
+          "score": 0.058252,
+          "stats": {
+            "pickWinCount": 1,
+            "pickCount": 2,
+            "banCount": 1,
+            "winRate": 0.5
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "sora",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "yu zhong",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "C",
+          "recommendation": "Weaker heroes. Only good in very specific situations"
+        },
+        {
+          "hero": "ruby",
+          "score": 0.051441,
+          "stats": {
+            "pickWinCount": 1,
+            "pickCount": 1,
+            "banCount": 4,
+            "winRate": 1.0
+          },
+          "counters": {
+            "counteredBy": [],
+            "strongAgainst": [
+              {
+                "hero": "uranus",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "C",
+          "recommendation": "Weaker heroes. Only good in very specific situations"
+        },
+        {
+          "hero": "khaleed",
+          "score": 0.028551,
+          "stats": {
+            "pickWinCount": 0,
+            "pickCount": 1,
+            "banCount": 7,
+            "winRate": 0.0
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "uranus",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": []
+          },
+          "tier": "D",
+          "recommendation": "Weakest heroes. Better to pick others"
+        },
+        {
+          "hero": "lukas",
+          "score": 0.013333,
+          "stats": {
+            "pickWinCount": 0,
+            "pickCount": 1,
+            "banCount": 0,
+            "winRate": 0.0
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "valentina",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": []
+          },
+          "tier": "D",
+          "recommendation": "Weakest heroes. Better to pick others"
+        }
+      ]
+    },
+    "jungle": {
+      "heroesCount": 16,
+      "tiers": {
+        "SS": [
+          "yi sun-shin"
+        ],
+        "S": [
+          "leomord",
+          "fredrinn",
+          "lancelot"
+        ],
+        "A": [
+          "joy",
+          "baxia",
+          "fanny",
+          "hayabusa"
+        ],
+        "B": [
+          "guinevere",
+          "nolan",
+          "harley",
+          "uranus"
+        ],
+        "C": [
+          "suyou",
+          "akai"
+        ],
+        "D": [
+          "freya",
+          "x.borg"
+        ]
+      },
+      "heroDetails": [
+        {
+          "hero": "yi sun-shin",
+          "score": 0.94,
+          "stats": {
+            "pickWinCount": 24,
+            "pickCount": 44,
+            "banCount": 24,
+            "winRate": 0.5455
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "fredrinn",
+                "encounters": 7,
+                "opponentWinRate": 0.7143
+              },
+              {
+                "hero": "baxia",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              },
+              {
+                "hero": "nolan",
+                "encounters": 4,
+                "opponentWinRate": 0.5
+              },
+              {
+                "hero": "fanny",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              },
+              {
+                "hero": "harley",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "hayabusa",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "guinevere",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "joy",
+                "encounters": 3,
+                "winRate": 0.6667
+              },
+              {
+                "hero": "lancelot",
+                "encounters": 8,
+                "winRate": 0.625
+              },
+              {
+                "hero": "leomord",
+                "encounters": 12,
+                "winRate": 0.5833
+              }
+            ]
+          },
+          "tier": "SS",
+          "recommendation": "Best heroes. Must ban or 1st pick"
+        },
+        {
+          "hero": "leomord",
+          "score": 0.728939,
+          "stats": {
+            "pickWinCount": 18,
+            "pickCount": 36,
+            "banCount": 16,
+            "winRate": 0.5
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "fredrinn",
+                "encounters": 3,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "uranus",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "joy",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              },
+              {
+                "hero": "yi sun-shin",
+                "encounters": 12,
+                "opponentWinRate": 0.5833
+              },
+              {
+                "hero": "harley",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "guinevere",
+                "encounters": 3,
+                "winRate": 1.0
+              },
+              {
+                "hero": "nolan",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "lancelot",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "fanny",
+                "encounters": 3,
+                "winRate": 0.6667
+              },
+              {
+                "hero": "baxia",
+                "encounters": 3,
+                "winRate": 0.6667
+              }
+            ]
+          },
+          "tier": "S",
+          "recommendation": "Strong heroes. 1st pick or 2nd pick"
+        },
+        {
+          "hero": "fredrinn",
+          "score": 0.49697,
+          "stats": {
+            "pickWinCount": 14,
+            "pickCount": 18,
+            "banCount": 25,
+            "winRate": 0.7778
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "lancelot",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "nolan",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              },
+              {
+                "hero": "yi sun-shin",
+                "encounters": 7,
+                "opponentWinRate": 0.2857
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "leomord",
+                "encounters": 3,
+                "winRate": 1.0
+              },
+              {
+                "hero": "hayabusa",
+                "encounters": 3,
+                "winRate": 1.0
+              },
+              {
+                "hero": "guinevere",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "yi sun-shin",
+                "encounters": 7,
+                "winRate": 0.7143
+              },
+              {
+                "hero": "nolan",
+                "encounters": 2,
+                "winRate": 0.5
+              }
+            ]
+          },
+          "tier": "S",
+          "recommendation": "Strong heroes. 1st pick or 2nd pick"
+        },
+        {
+          "hero": "lancelot",
+          "score": 0.415076,
+          "stats": {
+            "pickWinCount": 9,
+            "pickCount": 21,
+            "banCount": 22,
+            "winRate": 0.4286
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "fanny",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "leomord",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "guinevere",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "hayabusa",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              },
+              {
+                "hero": "yi sun-shin",
+                "encounters": 8,
+                "opponentWinRate": 0.625
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "freya",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "fredrinn",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "nolan",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "joy",
+                "encounters": 4,
+                "winRate": 0.5
+              },
+              {
+                "hero": "yi sun-shin",
+                "encounters": 8,
+                "winRate": 0.375
+              }
+            ]
+          },
+          "tier": "S",
+          "recommendation": "Strong heroes. 1st pick or 2nd pick"
+        },
+        {
+          "hero": "joy",
+          "score": 0.337879,
+          "stats": {
+            "pickWinCount": 8,
+            "pickCount": 17,
+            "banCount": 10,
+            "winRate": 0.4706
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "guinevere",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "suyou",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "fanny",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "yi sun-shin",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              },
+              {
+                "hero": "lancelot",
+                "encounters": 4,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "baxia",
+                "encounters": 4,
+                "winRate": 0.75
+              },
+              {
+                "hero": "leomord",
+                "encounters": 3,
+                "winRate": 0.6667
+              },
+              {
+                "hero": "lancelot",
+                "encounters": 4,
+                "winRate": 0.5
+              },
+              {
+                "hero": "yi sun-shin",
+                "encounters": 3,
+                "winRate": 0.3333
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "baxia",
+          "score": 0.289015,
+          "stats": {
+            "pickWinCount": 5,
+            "pickCount": 13,
+            "banCount": 40,
+            "winRate": 0.3846
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "hayabusa",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "fanny",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "joy",
+                "encounters": 4,
+                "opponentWinRate": 0.75
+              },
+              {
+                "hero": "leomord",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              },
+              {
+                "hero": "yi sun-shin",
+                "encounters": 3,
+                "opponentWinRate": 0.3333
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "x.borg",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "yi sun-shin",
+                "encounters": 3,
+                "winRate": 0.6667
+              },
+              {
+                "hero": "leomord",
+                "encounters": 3,
+                "winRate": 0.3333
+              },
+              {
+                "hero": "joy",
+                "encounters": 4,
+                "winRate": 0.25
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "fanny",
+          "score": 0.276894,
+          "stats": {
+            "pickWinCount": 5,
+            "pickCount": 8,
+            "banCount": 60,
+            "winRate": 0.625
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "leomord",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              },
+              {
+                "hero": "yi sun-shin",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "lancelot",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "baxia",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "joy",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "yi sun-shin",
+                "encounters": 2,
+                "winRate": 0.5
+              },
+              {
+                "hero": "leomord",
+                "encounters": 3,
+                "winRate": 0.3333
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "hayabusa",
+          "score": 0.255758,
+          "stats": {
+            "pickWinCount": 6,
+            "pickCount": 12,
+            "banCount": 13,
+            "winRate": 0.5
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "fredrinn",
+                "encounters": 3,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "yi sun-shin",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "lancelot",
+                "encounters": 3,
+                "opponentWinRate": 0.3333
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "guinevere",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "baxia",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "harley",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "lancelot",
+                "encounters": 3,
+                "winRate": 0.6667
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "guinevere",
+          "score": 0.167576,
+          "stats": {
+            "pickWinCount": 2,
+            "pickCount": 10,
+            "banCount": 21,
+            "winRate": 0.2
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "leomord",
+                "encounters": 3,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "fredrinn",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "hayabusa",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "yi sun-shin",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "lancelot",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "joy",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "nolan",
+          "score": 0.166818,
+          "stats": {
+            "pickWinCount": 4,
+            "pickCount": 9,
+            "banCount": 1,
+            "winRate": 0.4444
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "leomord",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "lancelot",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "yi sun-shin",
+                "encounters": 4,
+                "opponentWinRate": 0.5
+              },
+              {
+                "hero": "fredrinn",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "akai",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "yi sun-shin",
+                "encounters": 4,
+                "winRate": 0.5
+              },
+              {
+                "hero": "fredrinn",
+                "encounters": 2,
+                "winRate": 0.5
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "harley",
+          "score": 0.093788,
+          "stats": {
+            "pickWinCount": 2,
+            "pickCount": 5,
+            "banCount": 4,
+            "winRate": 0.4
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "hayabusa",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "leomord",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              },
+              {
+                "hero": "yi sun-shin",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "leomord",
+                "encounters": 2,
+                "winRate": 0.5
+              },
+              {
+                "hero": "yi sun-shin",
+                "encounters": 2,
+                "winRate": 0.5
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "uranus",
+          "score": 0.086591,
+          "stats": {
+            "pickWinCount": 1,
+            "pickCount": 1,
+            "banCount": 34,
+            "winRate": 1.0
+          },
+          "counters": {
+            "counteredBy": [],
+            "strongAgainst": [
+              {
+                "hero": "leomord",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "suyou",
+          "score": 0.068939,
+          "stats": {
+            "pickWinCount": 2,
+            "pickCount": 3,
+            "banCount": 0,
+            "winRate": 0.6667
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "leomord",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "joy",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "leomord",
+                "encounters": 2,
+                "winRate": 0.5
+              }
+            ]
+          },
+          "tier": "C",
+          "recommendation": "Weaker heroes. Only good in very specific situations"
+        },
+        {
+          "hero": "akai",
+          "score": 0.053106,
+          "stats": {
+            "pickWinCount": 1,
+            "pickCount": 3,
+            "banCount": 3,
+            "winRate": 0.3333
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "nolan",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "leomord",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "leomord",
+                "encounters": 2,
+                "winRate": 0.5
+              }
+            ]
+          },
+          "tier": "C",
+          "recommendation": "Weaker heroes. Only good in very specific situations"
+        },
+        {
+          "hero": "freya",
+          "score": 0.049091,
+          "stats": {
+            "pickWinCount": 0,
+            "pickCount": 1,
+            "banCount": 24,
+            "winRate": 0.0
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "lancelot",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": []
+          },
+          "tier": "D",
+          "recommendation": "Weakest heroes. Better to pick others"
+        },
+        {
+          "hero": "x.borg",
+          "score": 0.009091,
+          "stats": {
+            "pickWinCount": 0,
+            "pickCount": 1,
+            "banCount": 0,
+            "winRate": 0.0
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "baxia",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": []
+          },
+          "tier": "D",
+          "recommendation": "Weakest heroes. Better to pick others"
+        }
+      ]
+    },
+    "mid_lane": {
+      "heroesCount": 16,
+      "tiers": {
+        "SS": [
+          "pharsa"
+        ],
+        "S": [
+          "yve",
+          "zhuxin",
+          "kimmy"
+        ],
+        "A": [
+          "lunox",
+          "zetian",
+          "valentina",
+          "luo yi"
+        ],
+        "B": [
+          "lylia",
+          "kadita",
+          "faramis",
+          "kagura"
+        ],
+        "C": [
+          "selena",
+          "odette"
+        ],
+        "D": [
+          "novaria",
+          "cecilion"
+        ]
+      },
+      "heroDetails": [
+        {
+          "hero": "pharsa",
+          "score": 0.919444,
+          "stats": {
+            "pickWinCount": 24,
+            "pickCount": 53,
+            "banCount": 14,
+            "winRate": 0.4528
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "lunox",
+                "encounters": 6,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "selena",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "faramis",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "yve",
+                "encounters": 6,
+                "opponentWinRate": 0.8333
+              },
+              {
+                "hero": "zhuxin",
+                "encounters": 5,
+                "opponentWinRate": 0.6
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "novaria",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "lylia",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "valentina",
+                "encounters": 9,
+                "winRate": 0.6667
+              },
+              {
+                "hero": "kadita",
+                "encounters": 3,
+                "winRate": 0.6667
+              },
+              {
+                "hero": "luo yi",
+                "encounters": 5,
+                "winRate": 0.6
+              }
+            ]
+          },
+          "tier": "SS",
+          "recommendation": "Best heroes. Must ban or 1st pick"
+        },
+        {
+          "hero": "yve",
+          "score": 0.70739,
+          "stats": {
+            "pickWinCount": 18,
+            "pickCount": 33,
+            "banCount": 60,
+            "winRate": 0.5455
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "luo yi",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "lunox",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "odette",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "zetian",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "zhuxin",
+                "encounters": 15,
+                "opponentWinRate": 0.5333
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "kagura",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "cecilion",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "pharsa",
+                "encounters": 6,
+                "winRate": 0.8333
+              },
+              {
+                "hero": "kimmy",
+                "encounters": 6,
+                "winRate": 0.6667
+              },
+              {
+                "hero": "zhuxin",
+                "encounters": 15,
+                "winRate": 0.4667
+              }
+            ]
+          },
+          "tier": "S",
+          "recommendation": "Strong heroes. 1st pick or 2nd pick"
+        },
+        {
+          "hero": "zhuxin",
+          "score": 0.665487,
+          "stats": {
+            "pickWinCount": 17,
+            "pickCount": 28,
+            "banCount": 72,
+            "winRate": 0.6071
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "zetian",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "lylia",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              },
+              {
+                "hero": "yve",
+                "encounters": 15,
+                "opponentWinRate": 0.4667
+              },
+              {
+                "hero": "pharsa",
+                "encounters": 5,
+                "opponentWinRate": 0.4
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "kimmy",
+                "encounters": 3,
+                "winRate": 1.0
+              },
+              {
+                "hero": "lunox",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "novaria",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "pharsa",
+                "encounters": 5,
+                "winRate": 0.6
+              },
+              {
+                "hero": "yve",
+                "encounters": 15,
+                "winRate": 0.5333
+              }
+            ]
+          },
+          "tier": "S",
+          "recommendation": "Strong heroes. 1st pick or 2nd pick"
+        },
+        {
+          "hero": "kimmy",
+          "score": 0.367427,
+          "stats": {
+            "pickWinCount": 9,
+            "pickCount": 22,
+            "banCount": 10,
+            "winRate": 0.4091
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "zhuxin",
+                "encounters": 3,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "yve",
+                "encounters": 6,
+                "opponentWinRate": 0.6667
+              },
+              {
+                "hero": "pharsa",
+                "encounters": 9,
+                "opponentWinRate": 0.5556
+              },
+              {
+                "hero": "zetian",
+                "encounters": 3,
+                "opponentWinRate": 0.3333
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "valentina",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "zetian",
+                "encounters": 3,
+                "winRate": 0.6667
+              },
+              {
+                "hero": "pharsa",
+                "encounters": 9,
+                "winRate": 0.4444
+              },
+              {
+                "hero": "yve",
+                "encounters": 6,
+                "winRate": 0.3333
+              }
+            ]
+          },
+          "tier": "S",
+          "recommendation": "Strong heroes. 1st pick or 2nd pick"
+        },
+        {
+          "hero": "lunox",
+          "score": 0.358438,
+          "stats": {
+            "pickWinCount": 11,
+            "pickCount": 14,
+            "banCount": 17,
+            "winRate": 0.7857
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "zhuxin",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "lylia",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "faramis",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "pharsa",
+                "encounters": 6,
+                "winRate": 1.0
+              },
+              {
+                "hero": "valentina",
+                "encounters": 3,
+                "winRate": 1.0
+              },
+              {
+                "hero": "yve",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "faramis",
+                "encounters": 2,
+                "winRate": 0.5
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "zetian",
+          "score": 0.201861,
+          "stats": {
+            "pickWinCount": 6,
+            "pickCount": 10,
+            "banCount": 1,
+            "winRate": 0.6
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "kimmy",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              },
+              {
+                "hero": "pharsa",
+                "encounters": 4,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "valentina",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "yve",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "zhuxin",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "pharsa",
+                "encounters": 4,
+                "winRate": 0.5
+              },
+              {
+                "hero": "kimmy",
+                "encounters": 3,
+                "winRate": 0.3333
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "valentina",
+          "score": 0.200708,
+          "stats": {
+            "pickWinCount": 3,
+            "pickCount": 15,
+            "banCount": 18,
+            "winRate": 0.2
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "lunox",
+                "encounters": 3,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "kadita",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "kimmy",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "zetian",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "pharsa",
+                "encounters": 9,
+                "opponentWinRate": 0.6667
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "pharsa",
+                "encounters": 9,
+                "winRate": 0.3333
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "luo yi",
+          "score": 0.155608,
+          "stats": {
+            "pickWinCount": 4,
+            "pickCount": 7,
+            "banCount": 14,
+            "winRate": 0.5714
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "pharsa",
+                "encounters": 5,
+                "opponentWinRate": 0.6
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "yve",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "lylia",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "pharsa",
+                "encounters": 5,
+                "winRate": 0.4
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "lylia",
+          "score": 0.080791,
+          "stats": {
+            "pickWinCount": 2,
+            "pickCount": 5,
+            "banCount": 1,
+            "winRate": 0.4
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "luo yi",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "pharsa",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "zhuxin",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "lunox",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "zhuxin",
+                "encounters": 2,
+                "winRate": 0.5
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "kadita",
+          "score": 0.073244,
+          "stats": {
+            "pickWinCount": 2,
+            "pickCount": 4,
+            "banCount": 1,
+            "winRate": 0.5
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "pharsa",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "valentina",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "pharsa",
+                "encounters": 3,
+                "winRate": 0.3333
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "faramis",
+          "score": 0.064308,
+          "stats": {
+            "pickWinCount": 2,
+            "pickCount": 3,
+            "banCount": 0,
+            "winRate": 0.6667
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "lunox",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "pharsa",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "lunox",
+                "encounters": 2,
+                "winRate": 0.5
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "kagura",
+          "score": 0.044864,
+          "stats": {
+            "pickWinCount": 1,
+            "pickCount": 3,
+            "banCount": 1,
+            "winRate": 0.3333
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "yve",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "pharsa",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "pharsa",
+                "encounters": 2,
+                "winRate": 0.5
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "selena",
+          "score": 0.039492,
+          "stats": {
+            "pickWinCount": 1,
+            "pickCount": 1,
+            "banCount": 8,
+            "winRate": 1.0
+          },
+          "counters": {
+            "counteredBy": [],
+            "strongAgainst": [
+              {
+                "hero": "pharsa",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "C",
+          "recommendation": "Weaker heroes. Only good in very specific situations"
+        },
+        {
+          "hero": "odette",
+          "score": 0.029769,
+          "stats": {
+            "pickWinCount": 1,
+            "pickCount": 1,
+            "banCount": 1,
+            "winRate": 1.0
+          },
+          "counters": {
+            "counteredBy": [],
+            "strongAgainst": [
+              {
+                "hero": "yve",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "C",
+          "recommendation": "Weaker heroes. Only good in very specific situations"
+        },
+        {
+          "hero": "novaria",
+          "score": 0.015094,
+          "stats": {
+            "pickWinCount": 0,
+            "pickCount": 2,
+            "banCount": 0,
+            "winRate": 0.0
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "zhuxin",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "pharsa",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": []
+          },
+          "tier": "D",
+          "recommendation": "Weakest heroes. Better to pick others"
+        },
+        {
+          "hero": "cecilion",
+          "score": 0.007547,
+          "stats": {
+            "pickWinCount": 0,
+            "pickCount": 1,
+            "banCount": 0,
+            "winRate": 0.0
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "yve",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": []
+          },
+          "tier": "D",
+          "recommendation": "Weakest heroes. Better to pick others"
+        }
+      ]
+    },
+    "gold_lane": {
+      "heroesCount": 15,
+      "tiers": {
+        "SS": [
+          "claude"
+        ],
+        "S": [
+          "freya",
+          "granger",
+          "karrie"
+        ],
+        "A": [
+          "sora",
+          "harith",
+          "cici"
+        ],
+        "B": [
+          "esmeralda",
+          "moskov",
+          "lunox",
+          "valentina"
+        ],
+        "C": [
+          "ruby",
+          "x.borg"
+        ],
+        "D": [
+          "bruno",
+          "minsitthar"
+        ]
+      },
+      "heroDetails": [
+        {
+          "hero": "claude",
+          "score": 0.973913,
+          "stats": {
+            "pickWinCount": 31,
+            "pickCount": 56,
+            "banCount": 34,
+            "winRate": 0.5536
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "freya",
+                "encounters": 12,
+                "opponentWinRate": 0.75
+              },
+              {
+                "hero": "harith",
+                "encounters": 10,
+                "opponentWinRate": 0.6
+              },
+              {
+                "hero": "lunox",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              },
+              {
+                "hero": "granger",
+                "encounters": 8,
+                "opponentWinRate": 0.375
+              },
+              {
+                "hero": "moskov",
+                "encounters": 3,
+                "opponentWinRate": 0.3333
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "sora",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "esmeralda",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "karrie",
+                "encounters": 15,
+                "winRate": 0.7333
+              },
+              {
+                "hero": "moskov",
+                "encounters": 3,
+                "winRate": 0.6667
+              },
+              {
+                "hero": "cici",
+                "encounters": 3,
+                "winRate": 0.6667
+              }
+            ]
+          },
+          "tier": "SS",
+          "recommendation": "Best heroes. Must ban or 1st pick"
+        },
+        {
+          "hero": "freya",
+          "score": 0.490653,
+          "stats": {
+            "pickWinCount": 17,
+            "pickCount": 23,
+            "banCount": 24,
+            "winRate": 0.7391
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "sora",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "cici",
+                "encounters": 3,
+                "opponentWinRate": 0.3333
+              },
+              {
+                "hero": "claude",
+                "encounters": 12,
+                "opponentWinRate": 0.25
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "esmeralda",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "karrie",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "harith",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "minsitthar",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "x.borg",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "S",
+          "recommendation": "Strong heroes. 1st pick or 2nd pick"
+        },
+        {
+          "hero": "granger",
+          "score": 0.397275,
+          "stats": {
+            "pickWinCount": 12,
+            "pickCount": 27,
+            "banCount": 5,
+            "winRate": 0.4444
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "sora",
+                "encounters": 3,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "claude",
+                "encounters": 8,
+                "opponentWinRate": 0.625
+              },
+              {
+                "hero": "karrie",
+                "encounters": 5,
+                "opponentWinRate": 0.6
+              },
+              {
+                "hero": "cici",
+                "encounters": 4,
+                "opponentWinRate": 0.5
+              },
+              {
+                "hero": "harith",
+                "encounters": 5,
+                "opponentWinRate": 0.4
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "bruno",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "moskov",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "harith",
+                "encounters": 5,
+                "winRate": 0.6
+              },
+              {
+                "hero": "cici",
+                "encounters": 4,
+                "winRate": 0.5
+              },
+              {
+                "hero": "karrie",
+                "encounters": 5,
+                "winRate": 0.4
+              }
+            ]
+          },
+          "tier": "S",
+          "recommendation": "Strong heroes. 1st pick or 2nd pick"
+        },
+        {
+          "hero": "karrie",
+          "score": 0.345181,
+          "stats": {
+            "pickWinCount": 8,
+            "pickCount": 26,
+            "banCount": 14,
+            "winRate": 0.3077
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "cici",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "freya",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "sora",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "esmeralda",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "claude",
+                "encounters": 15,
+                "opponentWinRate": 0.7333
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "harith",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "granger",
+                "encounters": 5,
+                "winRate": 0.6
+              },
+              {
+                "hero": "claude",
+                "encounters": 15,
+                "winRate": 0.2667
+              }
+            ]
+          },
+          "tier": "S",
+          "recommendation": "Strong heroes. 1st pick or 2nd pick"
+        },
+        {
+          "hero": "sora",
+          "score": 0.338018,
+          "stats": {
+            "pickWinCount": 9,
+            "pickCount": 13,
+            "banCount": 46,
+            "winRate": 0.6923
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "claude",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "cici",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "valentina",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "granger",
+                "encounters": 3,
+                "winRate": 1.0
+              },
+              {
+                "hero": "freya",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "karrie",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "x.borg",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "harith",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "harith",
+          "score": 0.31131,
+          "stats": {
+            "pickWinCount": 9,
+            "pickCount": 19,
+            "banCount": 14,
+            "winRate": 0.4737
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "karrie",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "freya",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "sora",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "granger",
+                "encounters": 5,
+                "opponentWinRate": 0.6
+              },
+              {
+                "hero": "claude",
+                "encounters": 10,
+                "opponentWinRate": 0.4
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "moskov",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "claude",
+                "encounters": 10,
+                "winRate": 0.6
+              },
+              {
+                "hero": "granger",
+                "encounters": 5,
+                "winRate": 0.4
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "cici",
+          "score": 0.275306,
+          "stats": {
+            "pickWinCount": 8,
+            "pickCount": 15,
+            "banCount": 18,
+            "winRate": 0.5333
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "claude",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              },
+              {
+                "hero": "freya",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              },
+              {
+                "hero": "granger",
+                "encounters": 4,
+                "opponentWinRate": 0.5
+              },
+              {
+                "hero": "esmeralda",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "karrie",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "sora",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "granger",
+                "encounters": 4,
+                "winRate": 0.5
+              },
+              {
+                "hero": "esmeralda",
+                "encounters": 2,
+                "winRate": 0.5
+              },
+              {
+                "hero": "claude",
+                "encounters": 3,
+                "winRate": 0.3333
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "esmeralda",
+          "score": 0.156792,
+          "stats": {
+            "pickWinCount": 2,
+            "pickCount": 8,
+            "banCount": 31,
+            "winRate": 0.25
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "freya",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "ruby",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "sora",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "claude",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "cici",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "karrie",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "cici",
+                "encounters": 2,
+                "winRate": 0.5
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "moskov",
+          "score": 0.077289,
+          "stats": {
+            "pickWinCount": 2,
+            "pickCount": 6,
+            "banCount": 1,
+            "winRate": 0.3333
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "harith",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "granger",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "claude",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "ruby",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "claude",
+                "encounters": 3,
+                "winRate": 0.3333
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "lunox",
+          "score": 0.067371,
+          "stats": {
+            "pickWinCount": 1,
+            "pickCount": 2,
+            "banCount": 17,
+            "winRate": 0.5
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "claude",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "claude",
+                "encounters": 2,
+                "winRate": 0.5
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "valentina",
+          "score": 0.062402,
+          "stats": {
+            "pickWinCount": 1,
+            "pickCount": 1,
+            "banCount": 18,
+            "winRate": 1.0
+          },
+          "counters": {
+            "counteredBy": [],
+            "strongAgainst": [
+              {
+                "hero": "sora",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "ruby",
+          "score": 0.03911,
+          "stats": {
+            "pickWinCount": 1,
+            "pickCount": 2,
+            "banCount": 4,
+            "winRate": 0.5
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "moskov",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "esmeralda",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "C",
+          "recommendation": "Weaker heroes. Only good in very specific situations"
+        },
+        {
+          "hero": "x.borg",
+          "score": 0.014286,
+          "stats": {
+            "pickWinCount": 0,
+            "pickCount": 2,
+            "banCount": 0,
+            "winRate": 0.0
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "sora",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "freya",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": []
+          },
+          "tier": "C",
+          "recommendation": "Weaker heroes. Only good in very specific situations"
+        },
+        {
+          "hero": "bruno",
+          "score": 0.007143,
+          "stats": {
+            "pickWinCount": 0,
+            "pickCount": 1,
+            "banCount": 0,
+            "winRate": 0.0
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "granger",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": []
+          },
+          "tier": "D",
+          "recommendation": "Weakest heroes. Better to pick others"
+        },
+        {
+          "hero": "minsitthar",
+          "score": 0.007143,
+          "stats": {
+            "pickWinCount": 0,
+            "pickCount": 1,
+            "banCount": 0,
+            "winRate": 0.0
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "freya",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": []
+          },
+          "tier": "D",
+          "recommendation": "Weakest heroes. Better to pick others"
+        }
+      ]
+    },
+    "roam": {
+      "heroesCount": 17,
+      "tiers": {
+        "SS": [
+          "chou"
+        ],
+        "S": [
+          "kalea",
+          "grock",
+          "hilda"
+        ],
+        "A": [
+          "hylos",
+          "gatotkaca",
+          "khaleed",
+          "chip"
+        ],
+        "B": [
+          "badang",
+          "guinevere",
+          "helcurt",
+          "mathilda"
+        ],
+        "C": [
+          "gloo",
+          "tigreal",
+          "akai"
+        ],
+        "D": [
+          "minotaur",
+          "kaja"
+        ]
+      },
+      "heroDetails": [
+        {
+          "hero": "chou",
+          "score": 0.92,
+          "stats": {
+            "pickWinCount": 22,
+            "pickCount": 47,
+            "banCount": 13,
+            "winRate": 0.4681
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "mathilda",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "chip",
+                "encounters": 5,
+                "opponentWinRate": 0.8
+              },
+              {
+                "hero": "grock",
+                "encounters": 10,
+                "opponentWinRate": 0.7
+              },
+              {
+                "hero": "kalea",
+                "encounters": 6,
+                "opponentWinRate": 0.6667
+              },
+              {
+                "hero": "hilda",
+                "encounters": 11,
+                "opponentWinRate": 0.5455
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "gatotkaca",
+                "encounters": 4,
+                "winRate": 1.0
+              },
+              {
+                "hero": "khaleed",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "tigreal",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "guinevere",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "hylos",
+                "encounters": 6,
+                "winRate": 0.5
+              }
+            ]
+          },
+          "tier": "SS",
+          "recommendation": "Best heroes. Must ban or 1st pick"
+        },
+        {
+          "hero": "kalea",
+          "score": 0.627151,
+          "stats": {
+            "pickWinCount": 14,
+            "pickCount": 26,
+            "banCount": 57,
+            "winRate": 0.5385
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "grock",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "gatotkaca",
+                "encounters": 6,
+                "opponentWinRate": 0.6667
+              },
+              {
+                "hero": "hylos",
+                "encounters": 5,
+                "opponentWinRate": 0.6
+              },
+              {
+                "hero": "chou",
+                "encounters": 6,
+                "opponentWinRate": 0.3333
+              },
+              {
+                "hero": "khaleed",
+                "encounters": 3,
+                "opponentWinRate": 0.3333
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "tigreal",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "helcurt",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "hilda",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "chou",
+                "encounters": 6,
+                "winRate": 0.6667
+              },
+              {
+                "hero": "khaleed",
+                "encounters": 3,
+                "winRate": 0.6667
+              }
+            ]
+          },
+          "tier": "S",
+          "recommendation": "Strong heroes. 1st pick or 2nd pick"
+        },
+        {
+          "hero": "grock",
+          "score": 0.579884,
+          "stats": {
+            "pickWinCount": 14,
+            "pickCount": 19,
+            "banCount": 65,
+            "winRate": 0.7368
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "gatotkaca",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              },
+              {
+                "hero": "hilda",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              },
+              {
+                "hero": "chou",
+                "encounters": 10,
+                "opponentWinRate": 0.3
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "kalea",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "akai",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "minotaur",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "khaleed",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "chou",
+                "encounters": 10,
+                "winRate": 0.7
+              }
+            ]
+          },
+          "tier": "S",
+          "recommendation": "Strong heroes. 1st pick or 2nd pick"
+        },
+        {
+          "hero": "hilda",
+          "score": 0.576011,
+          "stats": {
+            "pickWinCount": 13,
+            "pickCount": 27,
+            "banCount": 33,
+            "winRate": 0.4815
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "kalea",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "gloo",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "guinevere",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "hylos",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              },
+              {
+                "hero": "badang",
+                "encounters": 4,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "khaleed",
+                "encounters": 4,
+                "winRate": 0.75
+              },
+              {
+                "hero": "chou",
+                "encounters": 11,
+                "winRate": 0.5455
+              },
+              {
+                "hero": "badang",
+                "encounters": 4,
+                "winRate": 0.5
+              },
+              {
+                "hero": "grock",
+                "encounters": 2,
+                "winRate": 0.5
+              },
+              {
+                "hero": "hylos",
+                "encounters": 3,
+                "winRate": 0.3333
+              }
+            ]
+          },
+          "tier": "S",
+          "recommendation": "Strong heroes. 1st pick or 2nd pick"
+        },
+        {
+          "hero": "hylos",
+          "score": 0.44329,
+          "stats": {
+            "pickWinCount": 11,
+            "pickCount": 20,
+            "banCount": 15,
+            "winRate": 0.55
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "khaleed",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "chou",
+                "encounters": 6,
+                "opponentWinRate": 0.5
+              },
+              {
+                "hero": "kalea",
+                "encounters": 5,
+                "opponentWinRate": 0.4
+              },
+              {
+                "hero": "hilda",
+                "encounters": 3,
+                "opponentWinRate": 0.3333
+              },
+              {
+                "hero": "gatotkaca",
+                "encounters": 4,
+                "opponentWinRate": 0.25
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "gatotkaca",
+                "encounters": 4,
+                "winRate": 0.75
+              },
+              {
+                "hero": "hilda",
+                "encounters": 3,
+                "winRate": 0.6667
+              },
+              {
+                "hero": "kalea",
+                "encounters": 5,
+                "winRate": 0.6
+              },
+              {
+                "hero": "chou",
+                "encounters": 6,
+                "winRate": 0.5
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "gatotkaca",
+          "score": 0.42029,
+          "stats": {
+            "pickWinCount": 9,
+            "pickCount": 23,
+            "banCount": 13,
+            "winRate": 0.3913
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "chou",
+                "encounters": 4,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "khaleed",
+                "encounters": 3,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "helcurt",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "hylos",
+                "encounters": 4,
+                "opponentWinRate": 0.75
+              },
+              {
+                "hero": "grock",
+                "encounters": 2,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "badang",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "mathilda",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "kalea",
+                "encounters": 6,
+                "winRate": 0.6667
+              },
+              {
+                "hero": "grock",
+                "encounters": 2,
+                "winRate": 0.5
+              },
+              {
+                "hero": "hylos",
+                "encounters": 4,
+                "winRate": 0.25
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "khaleed",
+          "score": 0.328758,
+          "stats": {
+            "pickWinCount": 8,
+            "pickCount": 16,
+            "banCount": 7,
+            "winRate": 0.5
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "chou",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "grock",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "hilda",
+                "encounters": 4,
+                "opponentWinRate": 0.75
+              },
+              {
+                "hero": "kalea",
+                "encounters": 3,
+                "opponentWinRate": 0.6667
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "gatotkaca",
+                "encounters": 3,
+                "winRate": 1.0
+              },
+              {
+                "hero": "hylos",
+                "encounters": 2,
+                "winRate": 1.0
+              },
+              {
+                "hero": "kaja",
+                "encounters": 1,
+                "winRate": 1.0
+              },
+              {
+                "hero": "kalea",
+                "encounters": 3,
+                "winRate": 0.3333
+              },
+              {
+                "hero": "hilda",
+                "encounters": 4,
+                "winRate": 0.25
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "chip",
+          "score": 0.141155,
+          "stats": {
+            "pickWinCount": 4,
+            "pickCount": 5,
+            "banCount": 5,
+            "winRate": 0.8
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "chou",
+                "encounters": 5,
+                "opponentWinRate": 0.2
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "chou",
+                "encounters": 5,
+                "winRate": 0.8
+              }
+            ]
+          },
+          "tier": "A",
+          "recommendation": "Good heroes. Safe picks, work well in teams"
+        },
+        {
+          "hero": "badang",
+          "score": 0.099595,
+          "stats": {
+            "pickWinCount": 2,
+            "pickCount": 6,
+            "banCount": 2,
+            "winRate": 0.3333
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "gatotkaca",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "hilda",
+                "encounters": 4,
+                "opponentWinRate": 0.5
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "hilda",
+                "encounters": 4,
+                "winRate": 0.5
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "guinevere",
+          "score": 0.072056,
+          "stats": {
+            "pickWinCount": 1,
+            "pickCount": 2,
+            "banCount": 21,
+            "winRate": 0.5
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "chou",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "hilda",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "helcurt",
+          "score": 0.055133,
+          "stats": {
+            "pickWinCount": 1,
+            "pickCount": 2,
+            "banCount": 10,
+            "winRate": 0.5
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "kalea",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "gatotkaca",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "mathilda",
+          "score": 0.050518,
+          "stats": {
+            "pickWinCount": 1,
+            "pickCount": 2,
+            "banCount": 7,
+            "winRate": 0.5
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "gatotkaca",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": [
+              {
+                "hero": "chou",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "B",
+          "recommendation": "Okay heroes. Useful if played well or for special plans"
+        },
+        {
+          "hero": "gloo",
+          "score": 0.037392,
+          "stats": {
+            "pickWinCount": 1,
+            "pickCount": 1,
+            "banCount": 4,
+            "winRate": 1.0
+          },
+          "counters": {
+            "counteredBy": [],
+            "strongAgainst": [
+              {
+                "hero": "hilda",
+                "encounters": 1,
+                "winRate": 1.0
+              }
+            ]
+          },
+          "tier": "C",
+          "recommendation": "Weaker heroes. Only good in very specific situations"
+        },
+        {
+          "hero": "tigreal",
+          "score": 0.025532,
+          "stats": {
+            "pickWinCount": 0,
+            "pickCount": 3,
+            "banCount": 0,
+            "winRate": 0.0
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "kalea",
+                "encounters": 2,
+                "opponentWinRate": 1.0
+              },
+              {
+                "hero": "chou",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": []
+          },
+          "tier": "C",
+          "recommendation": "Weaker heroes. Only good in very specific situations"
+        },
+        {
+          "hero": "akai",
+          "score": 0.013126,
+          "stats": {
+            "pickWinCount": 0,
+            "pickCount": 1,
+            "banCount": 3,
+            "winRate": 0.0
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "grock",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": []
+          },
+          "tier": "C",
+          "recommendation": "Weaker heroes. Only good in very specific situations"
+        },
+        {
+          "hero": "minotaur",
+          "score": 0.010049,
+          "stats": {
+            "pickWinCount": 0,
+            "pickCount": 1,
+            "banCount": 1,
+            "winRate": 0.0
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "grock",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": []
+          },
+          "tier": "D",
+          "recommendation": "Weakest heroes. Better to pick others"
+        },
+        {
+          "hero": "kaja",
+          "score": 0.010049,
+          "stats": {
+            "pickWinCount": 0,
+            "pickCount": 1,
+            "banCount": 1,
+            "winRate": 0.0
+          },
+          "counters": {
+            "counteredBy": [
+              {
+                "hero": "khaleed",
+                "encounters": 1,
+                "opponentWinRate": 1.0
+              }
+            ],
+            "strongAgainst": []
+          },
+          "tier": "D",
+          "recommendation": "Weakest heroes. Better to pick others"
+        }
+      ]
+    }
+  }
+}

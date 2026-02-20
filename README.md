@@ -1,38 +1,72 @@
-# Liquipedia Scraper Service (Mobile Legends)
+# Liquipedia Monorepo (Python-only)
 
-## What it does
+Monorepo berisi 2 app:
 
-### 1) Latest S-Tier tournament
-- `GET /api/s-tier/latest`
-  - Fetches `S-Tier_Tournaments` and returns the *latest* tournament row.
-  - Preference order:
-    1. If year **2026** exists, take the **first data row** under 2026.
-    2. Otherwise take the **first data row** under the **latest year** found.
+- `apps/scraper-service`: FastAPI service untuk scraping + parsing match + generate tier list JSON
+- `apps/tier-ui`: FastAPI + Jinja2 SSR UI untuk menampilkan tier list
 
-### 2) Matches (hero pick/ban per map)
-- `GET /api/tournament/{page}/matches`
-  - Fetches `{page}` wikitext and parses `{{Match}}` + `{{Map}}` blocks into JSON.
+## Struktur
 
-- `GET /api/s-tier/latest/matches`
-  - Fetches latest tournament via `S-Tier_Tournaments`, converts the tournament name to a Liquipedia page slug,
-    then returns parsed matches for that page (best-effort).
+```text
+apps/
+  scraper-service/
+    app/
+    build_hero_tier_list.py
+    swiss_stage_matches.json
+    knockout_stage_matches.json
+    hero_tier_list.json
+  tier-ui/
+    app/
+      templates/
+      static/
+packages/
+  shared/
+```
 
-### 3) Convenience shortcut for M7
-- `GET /api/m7/matches` (same as calling `/api/tournament/M7_World_Championship/matches`)
+## Setup Local
 
-## Run locally
 ```bash
-python -m venv .venv
+cd /Users/treido/Desktop/liquipedia-scraper-service
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -U pip
-pip install fastapi uvicorn httpx beautifulsoup4 cachetools
+pip install fastapi uvicorn httpx beautifulsoup4 cachetools jinja2
+```
+
+## Run Scraper Service
+
+```bash
+cd /Users/treido/Desktop/liquipedia-scraper-service/apps/scraper-service
 uvicorn app.main:app --reload --port 8080
 ```
 
-Open:
+Open docs:
 - http://127.0.0.1:8080/docs
 
-## Notes
-- Uses MediaWiki API: `https://liquipedia.net/mobilelegends/api.php`
-- Adds `User-Agent` + short in-memory cache to reduce rate-limit issues.
-- Wikitext parsing is best-effort (Liquipedia templates can evolve).
+## Run UI Service (SSR)
+
+```bash
+cd /Users/treido/Desktop/liquipedia-scraper-service/apps/tier-ui
+export SCRAPER_BASE_URL=http://127.0.0.1:8080
+uvicorn app.main:app --reload --port 8090
+```
+
+Open UI:
+- http://127.0.0.1:8090
+
+## Run Both Services (One Command)
+
+```bash
+cd /Users/treido/Desktop/liquipedia-scraper-service
+make run-all
+```
+
+Stop both: `Ctrl+C`
+
+## Endpoint penting scraper
+
+- `GET /api/tournament/{page}/matches`
+- `GET /api/tournament/M7_World_Championship/Swiss_Stage/matches`
+- `GET /api/tournament/M7_World_Championship/Knockout_Stage/matches`
+- `GET /api/tier-list/m7`
+- `GET /api/tier-list/m7?refresh=true`

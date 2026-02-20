@@ -35,10 +35,53 @@ def _find_blocks(text: str, start_token: str) -> List[str]:
             break
     return blocks
 
+def _extract_block_from_start(text: str, start: int) -> Optional[str]:
+    n = len(text)
+    depth = 0
+    j = start
+    while j < n - 1:
+        two = text[j:j+2]
+        if two == "{{":
+            depth += 1
+            j += 2
+            continue
+        if two == "}}":
+            depth -= 1
+            j += 2
+            if depth == 0:
+                return text[start:j]
+            continue
+        j += 1
+    return None
+
+def _template_name_at(text: str, start: int) -> Optional[str]:
+    if text[start:start+2] != "{{":
+        return None
+    i = start + 2
+    n = len(text)
+    while i < n and text[i] in " \t\r\n":
+        i += 1
+    j = i
+    while j < n and text[j] not in "|\r\n\t}":
+        j += 1
+    name = text[i:j].strip()
+    return name or None
+
 def _find_match_blocks(wikitext: str) -> List[str]:
     blocks: List[str] = []
-    for token in ("{{Match", "{{match"):
-        blocks.extend(_find_blocks(wikitext, token))
+    i = 0
+    n = len(wikitext)
+    while i < n - 1:
+        if wikitext[i:i+2] != "{{":
+            i += 1
+            continue
+
+        name = _template_name_at(wikitext, i)
+        if name and name.lower() == "match":
+            block = _extract_block_from_start(wikitext, i)
+            if block:
+                blocks.append(block)
+        i += 2
     return blocks
 
 def _parse_template_params(block: str) -> Dict[str, str]:

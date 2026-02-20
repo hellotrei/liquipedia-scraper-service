@@ -1,0 +1,11 @@
+[project]
+name = "tier-ui"
+version = "0.1.0"
+description = "Server-side UI for MLBB hero tier list"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.110.0",
+  "uvicorn>=0.27.0",
+  "httpx>=0.26.0",
+  "jinja2>=3.1.0",
+]

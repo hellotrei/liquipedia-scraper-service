@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hero Tier List",
+  "type": "object",
+  "required": ["generatedAt", "mapsAnalyzed", "roleOrder", "roles", "scoring"],
+  "properties": {
+    "generatedAt": {"type": "string"},
+    "mapsAnalyzed": {"type": "integer"},
+    "roleOrder": {"type": "array", "items": {"type": "string"}},
+    "roles": {"type": "object"},
+    "scoring": {"type": "object"}
+  }
+}
