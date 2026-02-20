@@ -80,7 +80,7 @@
     if (!el.draftRoot || !el.contrastToggleBtn) return;
     el.draftRoot.classList.toggle("hc", !!enabled);
     el.contrastToggleBtn.setAttribute("aria-pressed", enabled ? "true" : "false");
-    el.contrastToggleBtn.textContent = `High Contrast: ${enabled ? "On" : "Off"}`;
+    el.contrastToggleBtn.textContent = `Kontras Tinggi: ${enabled ? "Nyala" : "Mati"}`;
   }
 
   function initContrastMode() {

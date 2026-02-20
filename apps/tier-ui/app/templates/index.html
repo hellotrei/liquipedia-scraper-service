@@ -2,12 +2,12 @@
 {% block content %}
 <header class="header">
   <div>
-    <h1>M7 Hero Tier List + Draft Master</h1>
+    <h1>M7 Daftar Tier Hero + Asisten Draft</h1>
     <p>SSR UI from scraper endpoint: <code>{{ scraper_base_url }}/api/tier-list/m7</code></p>
   </div>
   <div class="meta">
     <span>Generated: {{ generated_at if generated_at else '-' }}</span>
-    <a class="btn" href="/?role={{ selected_role }}&refresh=true">Refresh Data</a>
+    <a class="btn" href="/?role={{ selected_role }}&refresh=true#hero-tier-list">Refresh Data</a>
   </div>
 </header>
 
@@ -17,12 +17,12 @@
 <section class="draft-master" id="draft-master">
   <div class="draft-head">
     <div class="draft-head-row">
-      <h2>DRAFT MASTER</h2>
+      <h2>Asisten Draft</h2>
       <button id="contrast-toggle-btn" class="btn-muted contrast-btn" type="button" aria-pressed="false">
-        High Contrast: Off
+        Kontras Tinggi: Mati
       </button>
     </div>
-    <p>Advanced tactical analysis for ban/pick strategy with role-safe composition.</p>
+    <p>Analisis taktis lanjutan untuk strategi ban/pick dengan komposisi role yang aman.</p>
   </div>
 
   <div class="draft-grid">
@@ -92,60 +92,61 @@
   </div>
 </section>
 
-<section class="tier-section">
-  <nav class="roles">
-    {% for role in role_order %}
-    <a href="/?role={{ role }}" class="role-tab {% if role == selected_role %}active{% endif %}">
-      {{ role_labels.get(role, role) }}
-    </a>
-    {% endfor %}
-  </nav>
+<section class="tier-master" id="hero-tier-list">
+  <div class="tier-head">
+    <h2>Daftar Tier Hero</h2>
+    <p>Papan prioritas per role untuk membantu draft lebih cepat dan tetap konsisten.</p>
+  </div>
 
-  <!-- <section class="legend">
-    {% for tier, rule in tier_rules.items() %}
-    <div><strong>{{ tier }}</strong>: {{ rule }}</div>
-    {% endfor %}
-  </section> -->
+  <section class="tier-section">
+    <nav class="roles">
+      {% for role in role_order %}
+      <a href="/?role={{ role }}#hero-tier-list" class="role-tab {% if role == selected_role %}active{% endif %}">
+        {{ role_labels.get(role, role) }}
+      </a>
+      {% endfor %}
+    </nav>
 
-  {% set hero_details = role_data.get('heroDetails', []) %}
-  {% if not hero_details %}
-  <section class="error">No hero details available for this role.</section>
-  {% else %}
-  {% for tier in ['SS', 'S', 'A', 'B', 'C', 'D'] %}
-    {% set heroes = hero_details | selectattr('tier', 'equalto', tier) | list %}
-    <section class="tier-block">
-      <div class="tier-title tier-{{ tier|lower }}">{{ tier }}</div>
-      <div class="hero-grid">
-        {% for hero in heroes %}
-        <article class="hero-card">
-          <h3>{{ hero.hero }}</h3>
-          <p class="score">Score: {{ "%.3f"|format(hero.score) }}</p>
-          <p class="stats">
-            PickWin: {{ hero.stats.pickWinCount }} | Pick: {{ hero.stats.pickCount }} | Ban: {{ hero.stats.banCount }} | WR: {{ "%.1f"|format(hero.stats.winRate * 100) }}%
-          </p>
-          <p class="small"><strong>Countered By:</strong>
-            {% if hero.counters.counteredBy %}
-              {{ hero.counters.counteredBy | map(attribute='hero') | list | join(', ') }}
-            {% else %}
-              -
-            {% endif %}
-          </p>
-          <p class="small"><strong>Strong Against:</strong>
-            {% if hero.counters.strongAgainst %}
-              {{ hero.counters.strongAgainst | map(attribute='hero') | list | join(', ') }}
-            {% else %}
-              -
-            {% endif %}
-          </p>
-        </article>
-        {% endfor %}
-      </div>
-    </section>
-  {% endfor %}
-  {% endif %}
+    {% set hero_details = role_data.get('heroDetails', []) %}
+    {% if not hero_details %}
+    <section class="error">No hero details available for this role.</section>
+    {% else %}
+    {% for tier in ['SS', 'S', 'A', 'B', 'C', 'D'] %}
+      {% set heroes = hero_details | selectattr('tier', 'equalto', tier) | list %}
+      <section class="tier-block">
+        <div class="tier-title tier-{{ tier|lower }}">{{ tier }}</div>
+        <div class="hero-grid">
+          {% for hero in heroes %}
+          <article class="hero-card">
+            <h3>{{ hero.hero }}</h3>
+            <p class="score">Score: {{ "%.3f"|format(hero.score) }}</p>
+            <p class="stats">
+              PickWin: {{ hero.stats.pickWinCount }} | Pick: {{ hero.stats.pickCount }} | Ban: {{ hero.stats.banCount }} | WR: {{ "%.1f"|format(hero.stats.winRate * 100) }}%
+            </p>
+            <p class="small"><strong>Countered By:</strong>
+              {% if hero.counters.counteredBy %}
+                {{ hero.counters.counteredBy | map(attribute='hero') | list | join(', ') }}
+              {% else %}
+                -
+              {% endif %}
+            </p>
+            <p class="small"><strong>Strong Against:</strong>
+              {% if hero.counters.strongAgainst %}
+                {{ hero.counters.strongAgainst | map(attribute='hero') | list | join(', ') }}
+              {% else %}
+                -
+              {% endif %}
+            </p>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+    {% endfor %}
+    {% endif %}
+  </section>
 </section>
 
 <script id="draft-data" type="application/json">{{ draft_data_json | safe }}</script>
-<script src="/static/draft_master.js?v=20260220f"></script>
+<script src="/static/draft_master.js?v=20260220h"></script>
 {% endif %}
 {% endblock %}
