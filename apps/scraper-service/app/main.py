@@ -2,6 +2,12 @@ from fastapi import FastAPI, HTTPException
 from app.liquipedia_client import LiquipediaClient
 from app.s_tier import extract_latest_s_tier, liquipedia_page_slug_from_title
 from app.m7_parser import parse_matches
+from app.draft_v2 import DraftV2ConfigError, get_draft_v2_meta
+from app.draft_v2_engine import (
+    DraftV2RequestError,
+    assign_from_payload,
+    recommend_from_payload,
+)
 from pathlib import Path
 import json
 
@@ -106,3 +112,31 @@ async def m7_tier_list(refresh: bool = False):
         return json.loads(out_path.read_text())
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed reading tier list file: {str(e)}")
+
+
+@app.get("/api/draft/v2/meta")
+async def draft_v2_meta(refresh: bool = False):
+    try:
+        return get_draft_v2_meta(refresh=refresh)
+    except DraftV2ConfigError as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/draft/v2/assign")
+async def draft_v2_assign(payload: dict, debug: bool = False):
+    try:
+        return assign_from_payload(payload or {}, debug=debug)
+    except (DraftV2ConfigError, DraftV2RequestError) as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed generating assignment: {str(e)}")
+
+
+@app.post("/api/draft/v2/recommend")
+async def draft_v2_recommend(payload: dict, debug: bool = False):
+    try:
+        return recommend_from_payload(payload or {}, debug=debug)
+    except (DraftV2ConfigError, DraftV2RequestError) as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed generating recommendation: {str(e)}")

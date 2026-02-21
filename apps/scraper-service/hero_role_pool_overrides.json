@@ -1,0 +1,20 @@
+{
+  "heroes": {
+    "suyou": {
+      "possibleRoles": ["exp_lane", "jungle"],
+      "rolePower": {
+        "exp_lane": 0.82,
+        "jungle": 0.78
+      },
+      "tags": ["flex"]
+    },
+    "x.borg": {
+      "possibleRoles": ["exp_lane", "gold_lane"],
+      "rolePower": {
+        "exp_lane": 0.84,
+        "gold_lane": 0.76
+      },
+      "tags": ["flex"]
+    }
+  }
+}

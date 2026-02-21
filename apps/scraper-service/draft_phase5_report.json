@@ -1,0 +1,259 @@
+{
+  "generatedAt": "2026-02-21T07:58:57.020311+00:00",
+  "config": {
+    "mapsRequested": 30,
+    "mapsEvaluated": 30,
+    "pickTopK": 6,
+    "banTopK": 12,
+    "evaluationMethod": "hit if recommendation intersects remaining ground-truth picks/bans at each draft micro-step"
+  },
+  "summary": {
+    "v1": {
+      "pick": {
+        "hit": 259,
+        "top1": 88,
+        "total": 300,
+        "hitRate": 0.8633,
+        "top1Rate": 0.2933
+      },
+      "ban": {
+        "hit": 203,
+        "top1": 23,
+        "total": 300,
+        "hitRate": 0.6767,
+        "top1Rate": 0.0767
+      }
+    },
+    "v2": {
+      "pick": {
+        "hit": 256,
+        "top1": 111,
+        "total": 300,
+        "hitRate": 0.8533,
+        "top1Rate": 0.37
+      },
+      "ban": {
+        "hit": 229,
+        "top1": 20,
+        "total": 300,
+        "hitRate": 0.7633,
+        "top1Rate": 0.0667
+      }
+    },
+    "delta": {
+      "pickHitRate": -0.01,
+      "banHitRate": 0.0866,
+      "pickTop1Rate": 0.0767,
+      "banTop1Rate": -0.01
+    },
+    "v2Feasibility": {
+      "checks": 600,
+      "allyFalse": 2,
+      "enemyFalse": 0,
+      "allyFalseRate": 0.0033,
+      "enemyFalseRate": 0.0
+    }
+  },
+  "sampleRows": [
+    {
+      "mapIndex": 1,
+      "source": "swiss_stage_matches.json",
+      "map": 1,
+      "step": 1,
+      "mode": "ban",
+      "side": "ally",
+      "truthRemaining": [
+        "yve",
+        "selena",
+        "yu zhong",
+        "gatotkaca",
+        "hylos"
+      ],
+      "v1Top3": [
+        "claude",
+        "yi sun-shin",
+        "lapu-lapu"
+      ],
+      "v2Top3": [
+        "claude",
+        "pharsa",
+        "yi sun-shin"
+      ]
+    },
+    {
+      "mapIndex": 2,
+      "source": "swiss_stage_matches.json",
+      "map": 1,
+      "step": 1,
+      "mode": "ban",
+      "side": "ally",
+      "truthRemaining": [
+        "zhuxin",
+        "sora",
+        "hilda",
+        "valentina",
+        "lapu-lapu"
+      ],
+      "v1Top3": [
+        "claude",
+        "yi sun-shin",
+        "lapu-lapu"
+      ],
+      "v2Top3": [
+        "claude",
+        "pharsa",
+        "yi sun-shin"
+      ]
+    },
+    {
+      "mapIndex": 3,
+      "source": "swiss_stage_matches.json",
+      "map": 1,
+      "step": 1,
+      "mode": "ban",
+      "side": "ally",
+      "truthRemaining": [
+        "grock",
+        "sora",
+        "yve",
+        "lapu-lapu",
+        "arlott"
+      ],
+      "v1Top3": [
+        "claude",
+        "yi sun-shin",
+        "lapu-lapu"
+      ],
+      "v2Top3": [
+        "claude",
+        "pharsa",
+        "yi sun-shin"
+      ]
+    },
+    {
+      "mapIndex": 4,
+      "source": "swiss_stage_matches.json",
+      "map": 1,
+      "step": 1,
+      "mode": "ban",
+      "side": "ally",
+      "truthRemaining": [
+        "zhuxin",
+        "sora",
+        "kalea",
+        "arlott",
+        "uranus"
+      ],
+      "v1Top3": [
+        "claude",
+        "yi sun-shin",
+        "lapu-lapu"
+      ],
+      "v2Top3": [
+        "claude",
+        "pharsa",
+        "yi sun-shin"
+      ]
+    },
+    {
+      "mapIndex": 5,
+      "source": "swiss_stage_matches.json",
+      "map": 1,
+      "step": 1,
+      "mode": "ban",
+      "side": "ally",
+      "truthRemaining": [
+        "zhuxin",
+        "hilda",
+        "fanny",
+        "guinevere",
+        "baxia"
+      ],
+      "v1Top3": [
+        "claude",
+        "yi sun-shin",
+        "lapu-lapu"
+      ],
+      "v2Top3": [
+        "claude",
+        "pharsa",
+        "yi sun-shin"
+      ]
+    },
+    {
+      "mapIndex": 6,
+      "source": "swiss_stage_matches.json",
+      "map": 1,
+      "step": 1,
+      "mode": "ban",
+      "side": "ally",
+      "truthRemaining": [
+        "lunox",
+        "fanny",
+        "yve",
+        "hayabusa",
+        "joy"
+      ],
+      "v1Top3": [
+        "claude",
+        "yi sun-shin",
+        "lapu-lapu"
+      ],
+      "v2Top3": [
+        "claude",
+        "pharsa",
+        "yi sun-shin"
+      ]
+    },
+    {
+      "mapIndex": 7,
+      "source": "swiss_stage_matches.json",
+      "map": 1,
+      "step": 1,
+      "mode": "ban",
+      "side": "ally",
+      "truthRemaining": [
+        "yu zhong",
+        "hilda",
+        "lancelot",
+        "pharsa",
+        "sora"
+      ],
+      "v1Top3": [
+        "claude",
+        "yi sun-shin",
+        "lapu-lapu"
+      ],
+      "v2Top3": [
+        "claude",
+        "pharsa",
+        "yi sun-shin"
+      ]
+    },
+    {
+      "mapIndex": 8,
+      "source": "swiss_stage_matches.json",
+      "map": 1,
+      "step": 1,
+      "mode": "ban",
+      "side": "ally",
+      "truthRemaining": [
+        "selena",
+        "fanny",
+        "yve",
+        "lunox",
+        "guinevere"
+      ],
+      "v1Top3": [
+        "claude",
+        "yi sun-shin",
+        "lapu-lapu"
+      ],
+      "v2Top3": [
+        "claude",
+        "pharsa",
+        "yi sun-shin"
+      ]
+    }
+  ]
+}

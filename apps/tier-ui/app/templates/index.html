@@ -7,7 +7,7 @@
   </div>
   <div class="meta">
     <span>Generated: {{ generated_at if generated_at else '-' }}</span>
-    <a class="btn" href="/?role={{ selected_role }}&refresh=true#hero-tier-list">Refresh Data</a>
+    <a class="btn" href="/?role={{ selected_role }}&engine={{ selected_engine }}&refresh=true#hero-tier-list">Refresh Data</a>
   </div>
 </header>
 
@@ -18,9 +18,17 @@
   <div class="draft-head">
     <div class="draft-head-row">
       <h2>Asisten Draft</h2>
-      <button id="contrast-toggle-btn" class="btn-muted contrast-btn" type="button" aria-pressed="false">
-        Kontras Tinggi: Mati
-      </button>
+      <div class="draft-head-controls">
+        <label class="engine-label" for="engine-select">Engine</label>
+        <select id="engine-select" class="engine-select">
+          <option value="v2" {% if selected_engine == 'v2' %}selected{% endif %}>v2 (Flex)</option>
+          <option value="v1" {% if selected_engine == 'v1' %}selected{% endif %}>v1 (Role Order)</option>
+        </select>
+        <span id="engine-status" class="engine-status"></span>
+        <button id="contrast-toggle-btn" class="btn-muted contrast-btn" type="button" aria-pressed="false">
+          Kontras Tinggi: Mati
+        </button>
+      </div>
     </div>
     <p>Analisis taktis lanjutan untuk strategi ban/pick dengan komposisi role yang aman.</p>
   </div>
@@ -42,6 +50,7 @@
         <p class="turn-label" id="turn-label">Waiting draft data...</p>
         <p class="turn-hint" id="turn-hint">-</p>
         <p class="turn-progress" id="turn-progress"></p>
+        <p class="turn-warning hidden" id="turn-warning"></p>
       </div>
 
       <div class="action-row">
@@ -101,7 +110,7 @@
   <section class="tier-section">
     <nav class="roles">
       {% for role in role_order %}
-      <a href="/?role={{ role }}#hero-tier-list" class="role-tab {% if role == selected_role %}active{% endif %}">
+      <a href="/?role={{ role }}&engine={{ selected_engine }}#hero-tier-list" class="role-tab {% if role == selected_role %}active{% endif %}">
         {{ role_labels.get(role, role) }}
       </a>
       {% endfor %}
@@ -147,6 +156,6 @@
 </section>
 
 <script id="draft-data" type="application/json">{{ draft_data_json | safe }}</script>
-<script src="/static/draft_master.js?v=20260220h"></script>
+<script src="/static/draft_master.js?v=20260221a"></script>
 {% endif %}
 {% endblock %}

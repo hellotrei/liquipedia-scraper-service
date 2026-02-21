@@ -16,3 +16,14 @@ uvicorn app.main:app --reload --port 8090
 
 Open:
 - http://127.0.0.1:8090
+
+## Draft Master Engine Mode
+
+- `/?engine=v2` -> engine fleksibel (role-agnostic, rekomendasi dari backend `/api/draft/v2/recommend`)
+- `/?engine=v1` -> engine lama (role order)
+
+UI juga menyediakan proxy endpoint ke scraper service:
+
+- `GET /api/draft/v2/meta`
+- `POST /api/draft/v2/assign`
+- `POST /api/draft/v2/recommend`

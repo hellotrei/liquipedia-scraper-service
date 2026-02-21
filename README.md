@@ -70,3 +70,22 @@ Stop both: `Ctrl+C`
 - `GET /api/tournament/M7_World_Championship/Knockout_Stage/matches`
 - `GET /api/tier-list/m7`
 - `GET /api/tier-list/m7?refresh=true`
+- `GET /api/draft/v2/meta`
+- `POST /api/draft/v2/assign`
+- `POST /api/draft/v2/recommend`
+
+## Draft Engine v2 Spec
+
+- Lihat dokumen desain: `docs/draft_engine_v2_spec.md`
+
+## Phase 5 Validation
+
+```bash
+cd /Users/treido/Desktop/liquipedia-scraper-service
+source .venv/bin/activate
+python3 apps/scraper-service/evaluate_draft_phase5.py --maps 30
+```
+
+Output:
+- `apps/scraper-service/draft_phase5_report.json`
+- `docs/draft_phase5_report.md`

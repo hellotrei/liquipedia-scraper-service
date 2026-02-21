@@ -1,0 +1,665 @@
+{
+  "version": "2026-02-21",
+  "source": "generated_from_hero_tier_list_m7",
+  "roles": [
+    "exp_lane",
+    "jungle",
+    "mid_lane",
+    "gold_lane",
+    "roam"
+  ],
+  "heroes": {
+    "akai": {
+      "possibleRoles": [
+        "jungle",
+        "roam"
+      ],
+      "rolePower": {
+        "jungle": 0.6632,
+        "roam": 0.6608
+      },
+      "tags": [
+        "flex"
+      ]
+    },
+    "alice": {
+      "possibleRoles": [
+        "exp_lane"
+      ],
+      "rolePower": {
+        "exp_lane": 0.7581
+      },
+      "tags": []
+    },
+    "arlott": {
+      "possibleRoles": [
+        "exp_lane"
+      ],
+      "rolePower": {
+        "exp_lane": 0.8489
+      },
+      "tags": []
+    },
+    "badang": {
+      "possibleRoles": [
+        "roam"
+      ],
+      "rolePower": {
+        "roam": 0.746
+      },
+      "tags": []
+    },
+    "baxia": {
+      "possibleRoles": [
+        "jungle"
+      ],
+      "rolePower": {
+        "jungle": 0.8373
+      },
+      "tags": []
+    },
+    "benedetta": {
+      "possibleRoles": [
+        "exp_lane"
+      ],
+      "rolePower": {
+        "exp_lane": 0.6635
+      },
+      "tags": []
+    },
+    "bruno": {
+      "possibleRoles": [
+        "gold_lane"
+      ],
+      "rolePower": {
+        "gold_lane": 0.5804
+      },
+      "tags": []
+    },
+    "cecilion": {
+      "possibleRoles": [
+        "mid_lane"
+      ],
+      "rolePower": {
+        "mid_lane": 0.5805
+      },
+      "tags": []
+    },
+    "chip": {
+      "possibleRoles": [
+        "roam"
+      ],
+      "rolePower": {
+        "roam": 0.8285
+      },
+      "tags": []
+    },
+    "chou": {
+      "possibleRoles": [
+        "roam"
+      ],
+      "rolePower": {
+        "roam": 0.99
+      },
+      "tags": []
+    },
+    "cici": {
+      "possibleRoles": [
+        "exp_lane",
+        "gold_lane"
+      ],
+      "rolePower": {
+        "exp_lane": 0.8401,
+        "gold_lane": 0.8365
+      },
+      "tags": [
+        "flex"
+      ]
+    },
+    "claude": {
+      "possibleRoles": [
+        "gold_lane"
+      ],
+      "rolePower": {
+        "gold_lane": 0.99
+      },
+      "tags": []
+    },
+    "esmeralda": {
+      "possibleRoles": [
+        "exp_lane",
+        "gold_lane"
+      ],
+      "rolePower": {
+        "exp_lane": 0.8508,
+        "gold_lane": 0.7494
+      },
+      "tags": [
+        "flex"
+      ]
+    },
+    "fanny": {
+      "possibleRoles": [
+        "jungle"
+      ],
+      "rolePower": {
+        "jungle": 0.8366
+      },
+      "tags": []
+    },
+    "faramis": {
+      "possibleRoles": [
+        "mid_lane"
+      ],
+      "rolePower": {
+        "mid_lane": 0.7439
+      },
+      "tags": []
+    },
+    "fredrinn": {
+      "possibleRoles": [
+        "jungle"
+      ],
+      "rolePower": {
+        "jungle": 0.9198
+      },
+      "tags": []
+    },
+    "freya": {
+      "possibleRoles": [
+        "jungle",
+        "gold_lane"
+      ],
+      "rolePower": {
+        "jungle": 0.5829,
+        "gold_lane": 0.9194
+      },
+      "tags": [
+        "flex"
+      ]
+    },
+    "gatotkaca": {
+      "possibleRoles": [
+        "roam"
+      ],
+      "rolePower": {
+        "roam": 0.8452
+      },
+      "tags": []
+    },
+    "gloo": {
+      "possibleRoles": [
+        "exp_lane",
+        "roam"
+      ],
+      "rolePower": {
+        "exp_lane": 0.7514,
+        "roam": 0.6622
+      },
+      "tags": [
+        "flex"
+      ]
+    },
+    "granger": {
+      "possibleRoles": [
+        "gold_lane"
+      ],
+      "rolePower": {
+        "gold_lane": 0.9138
+      },
+      "tags": []
+    },
+    "grock": {
+      "possibleRoles": [
+        "roam"
+      ],
+      "rolePower": {
+        "roam": 0.9248
+      },
+      "tags": []
+    },
+    "guinevere": {
+      "possibleRoles": [
+        "jungle",
+        "roam"
+      ],
+      "rolePower": {
+        "jungle": 0.7501,
+        "roam": 0.7443
+      },
+      "tags": [
+        "flex"
+      ]
+    },
+    "harith": {
+      "possibleRoles": [
+        "gold_lane"
+      ],
+      "rolePower": {
+        "gold_lane": 0.8387
+      },
+      "tags": []
+    },
+    "harley": {
+      "possibleRoles": [
+        "jungle"
+      ],
+      "rolePower": {
+        "jungle": 0.7456
+      },
+      "tags": []
+    },
+    "hayabusa": {
+      "possibleRoles": [
+        "jungle"
+      ],
+      "rolePower": {
+        "jungle": 0.8353
+      },
+      "tags": []
+    },
+    "helcurt": {
+      "possibleRoles": [
+        "roam"
+      ],
+      "rolePower": {
+        "roam": 0.7433
+      },
+      "tags": []
+    },
+    "hilda": {
+      "possibleRoles": [
+        "exp_lane",
+        "roam"
+      ],
+      "rolePower": {
+        "exp_lane": 0.6677,
+        "roam": 0.9246
+      },
+      "tags": [
+        "flex"
+      ]
+    },
+    "hylos": {
+      "possibleRoles": [
+        "roam"
+      ],
+      "rolePower": {
+        "roam": 0.8466
+      },
+      "tags": []
+    },
+    "joy": {
+      "possibleRoles": [
+        "jungle"
+      ],
+      "rolePower": {
+        "jungle": 0.8403
+      },
+      "tags": []
+    },
+    "kadita": {
+      "possibleRoles": [
+        "mid_lane"
+      ],
+      "rolePower": {
+        "mid_lane": 0.7444
+      },
+      "tags": []
+    },
+    "kagura": {
+      "possibleRoles": [
+        "mid_lane"
+      ],
+      "rolePower": {
+        "mid_lane": 0.7427
+      },
+      "tags": []
+    },
+    "kaja": {
+      "possibleRoles": [
+        "roam"
+      ],
+      "rolePower": {
+        "roam": 0.5806
+      },
+      "tags": []
+    },
+    "kalea": {
+      "possibleRoles": [
+        "roam"
+      ],
+      "rolePower": {
+        "roam": 0.9276
+      },
+      "tags": []
+    },
+    "karrie": {
+      "possibleRoles": [
+        "gold_lane"
+      ],
+      "rolePower": {
+        "gold_lane": 0.9107
+      },
+      "tags": []
+    },
+    "khaleed": {
+      "possibleRoles": [
+        "exp_lane",
+        "roam"
+      ],
+      "rolePower": {
+        "exp_lane": 0.5817,
+        "roam": 0.8397
+      },
+      "tags": [
+        "flex"
+      ]
+    },
+    "kimmy": {
+      "possibleRoles": [
+        "mid_lane"
+      ],
+      "rolePower": {
+        "mid_lane": 0.912
+      },
+      "tags": []
+    },
+    "lancelot": {
+      "possibleRoles": [
+        "jungle"
+      ],
+      "rolePower": {
+        "jungle": 0.9149
+      },
+      "tags": []
+    },
+    "lapu-lapu": {
+      "possibleRoles": [
+        "exp_lane"
+      ],
+      "rolePower": {
+        "exp_lane": 0.99
+      },
+      "tags": []
+    },
+    "leomord": {
+      "possibleRoles": [
+        "jungle"
+      ],
+      "rolePower": {
+        "jungle": 0.9337
+      },
+      "tags": []
+    },
+    "lukas": {
+      "possibleRoles": [
+        "exp_lane"
+      ],
+      "rolePower": {
+        "exp_lane": 0.5808
+      },
+      "tags": []
+    },
+    "lunox": {
+      "possibleRoles": [
+        "mid_lane",
+        "gold_lane"
+      ],
+      "rolePower": {
+        "mid_lane": 0.8415,
+        "gold_lane": 0.744
+      },
+      "tags": [
+        "flex"
+      ]
+    },
+    "luo yi": {
+      "possibleRoles": [
+        "mid_lane"
+      ],
+      "rolePower": {
+        "mid_lane": 0.8293
+      },
+      "tags": []
+    },
+    "lylia": {
+      "possibleRoles": [
+        "mid_lane"
+      ],
+      "rolePower": {
+        "mid_lane": 0.7448
+      },
+      "tags": []
+    },
+    "mathilda": {
+      "possibleRoles": [
+        "roam"
+      ],
+      "rolePower": {
+        "roam": 0.743
+      },
+      "tags": []
+    },
+    "minotaur": {
+      "possibleRoles": [
+        "roam"
+      ],
+      "rolePower": {
+        "roam": 0.5806
+      },
+      "tags": []
+    },
+    "minsitthar": {
+      "possibleRoles": [
+        "gold_lane"
+      ],
+      "rolePower": {
+        "gold_lane": 0.5804
+      },
+      "tags": []
+    },
+    "moskov": {
+      "possibleRoles": [
+        "gold_lane"
+      ],
+      "rolePower": {
+        "gold_lane": 0.7446
+      },
+      "tags": []
+    },
+    "nolan": {
+      "possibleRoles": [
+        "jungle"
+      ],
+      "rolePower": {
+        "jungle": 0.75
+      },
+      "tags": []
+    },
+    "novaria": {
+      "possibleRoles": [
+        "mid_lane"
+      ],
+      "rolePower": {
+        "mid_lane": 0.5809
+      },
+      "tags": []
+    },
+    "odette": {
+      "possibleRoles": [
+        "mid_lane"
+      ],
+      "rolePower": {
+        "mid_lane": 0.6618
+      },
+      "tags": []
+    },
+    "pharsa": {
+      "possibleRoles": [
+        "mid_lane"
+      ],
+      "rolePower": {
+        "mid_lane": 0.99
+      },
+      "tags": []
+    },
+    "phoveus": {
+      "possibleRoles": [
+        "exp_lane"
+      ],
+      "rolePower": {
+        "exp_lane": 0.8436
+      },
+      "tags": []
+    },
+    "ruby": {
+      "possibleRoles": [
+        "exp_lane",
+        "gold_lane"
+      ],
+      "rolePower": {
+        "exp_lane": 0.6631,
+        "gold_lane": 0.6623
+      },
+      "tags": [
+        "flex"
+      ]
+    },
+    "selena": {
+      "possibleRoles": [
+        "mid_lane"
+      ],
+      "rolePower": {
+        "mid_lane": 0.6624
+      },
+      "tags": []
+    },
+    "sora": {
+      "possibleRoles": [
+        "exp_lane",
+        "gold_lane"
+      ],
+      "rolePower": {
+        "exp_lane": 0.9328,
+        "gold_lane": 0.8403
+      },
+      "tags": [
+        "flex"
+      ]
+    },
+    "suyou": {
+      "possibleRoles": [
+        "jungle"
+      ],
+      "rolePower": {
+        "jungle": 0.6641
+      },
+      "tags": []
+    },
+    "terizla": {
+      "possibleRoles": [
+        "exp_lane"
+      ],
+      "rolePower": {
+        "exp_lane": 0.7493
+      },
+      "tags": []
+    },
+    "tigreal": {
+      "possibleRoles": [
+        "roam"
+      ],
+      "rolePower": {
+        "roam": 0.6615
+      },
+      "tags": []
+    },
+    "uranus": {
+      "possibleRoles": [
+        "exp_lane",
+        "jungle"
+      ],
+      "rolePower": {
+        "exp_lane": 0.9433,
+        "jungle": 0.7452
+      },
+      "tags": [
+        "flex"
+      ]
+    },
+    "valentina": {
+      "possibleRoles": [
+        "exp_lane",
+        "mid_lane",
+        "gold_lane"
+      ],
+      "rolePower": {
+        "exp_lane": 0.7552,
+        "mid_lane": 0.832,
+        "gold_lane": 0.7437
+      },
+      "tags": [
+        "flex"
+      ]
+    },
+    "x.borg": {
+      "possibleRoles": [
+        "jungle",
+        "gold_lane"
+      ],
+      "rolePower": {
+        "jungle": 0.5805,
+        "gold_lane": 0.6609
+      },
+      "tags": [
+        "flex"
+      ]
+    },
+    "yi sun-shin": {
+      "possibleRoles": [
+        "jungle"
+      ],
+      "rolePower": {
+        "jungle": 0.99
+      },
+      "tags": []
+    },
+    "yu zhong": {
+      "possibleRoles": [
+        "exp_lane"
+      ],
+      "rolePower": {
+        "exp_lane": 0.9415
+      },
+      "tags": []
+    },
+    "yve": {
+      "possibleRoles": [
+        "mid_lane"
+      ],
+      "rolePower": {
+        "mid_lane": 0.9324
+      },
+      "tags": []
+    },
+    "zetian": {
+      "possibleRoles": [
+        "mid_lane"
+      ],
+      "rolePower": {
+        "mid_lane": 0.8321
+      },
+      "tags": []
+    },
+    "zhuxin": {
+      "possibleRoles": [
+        "mid_lane"
+      ],
+      "rolePower": {
+        "mid_lane": 0.9299
+      },
+      "tags": []
+    }
+  }
+}
